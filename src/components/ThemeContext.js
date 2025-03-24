@@ -4,7 +4,7 @@ import React, { createContext, useEffect, useState } from 'react';
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'false');
 
   useEffect(() => {
     document.body.className = darkMode ? 'dark-mode' : '';
