@@ -1,0 +1,85 @@
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #444;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  input,
+  textarea,
+  select {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  button {
+    padding: 0.6rem 1rem;
+    background-color: #506104;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:  #015029;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+
+  .form-container.dark {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+  }
+  
+  .form-container.dark input,
+  .form-container.dark textarea,
+  .form-container.dark select {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  .form-container.dark button {
+    background-color: #bd2222;
+    color: #fff;
+  }
+  
+  .toggle-dark {
+    float: right;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: inherit;
+  }
+  

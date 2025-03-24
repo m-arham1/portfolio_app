@@ -1,0 +1,48 @@
+/* ProjectsSection.css */
+
+.projects {
+    padding: 4rem 2rem;
+    background-color: #f4f4f9;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    color: #506104;
+    margin-bottom: 2rem;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .project-list > div {
+    scroll-snap-align: start;
+  }
+  
+
+  .projects {
+    padding: 3rem;
+    background-color: #fafafa;
+    color: #141414;
+  }
+  
+  .projects.dark {
+    background-color: #141414;
+    color: #f5f5f5;
+  }
+  
+
+  
+  .project-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  

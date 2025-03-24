@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #506104;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar.dark {
+    background-color: #141414;
+    color: #e5e5e5;
+  }
+  
+  .navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: inherit;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+  }
+  
+  .theme-toggle-btn {
+    margin-left: 1rem;
+    border: none;
+    background: #e50914;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      background-color: #f8f4f4;
+      right: 0;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links a {
+      padding: 0.5rem 0;
+    }
+  }
+  
+
+
+  body.dark-mode {
+    background-color: #f6f6f8;
+    color: #e5e5e5;
+    transition: all 0.3s ease;
+  }
+  
+  .page-container.dark,
+  .form-container.dark {
+    background-color: #141414;
+    color: #fff;
+  }
+  
+  input, textarea, select {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .dark input, .dark textarea, .dark select {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  .theme-toggle-btn {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .theme-toggle-btn.dark {
+    background-color: #462123;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
